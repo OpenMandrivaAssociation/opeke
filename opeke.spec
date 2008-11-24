@@ -1,8 +1,8 @@
 Summary:	Playing with virtual bricks
 Name:		opeke
-Version: 	0.3
+Version: 	0.3.1
 Release: 	%mkrel 1
-Source0: 	http://www.opendesktop.org/CONTENT/content-files/76417-%{name}_%{version}_src.tar.gz
+Source0: 	http://opeke.noughmad.org/source/%{name}_%{version}_src.tar.gz
 License: 	GPLv2+
 Group: 		Graphics
 Url: 		http://opeke.noughmad.org/wiki/doku.php
@@ -32,7 +32,7 @@ what you've built.
 #--------------------------------------------------------------------
 
 %prep
-%setup -q -n Opeke
+%setup -q -n %name-%version
 
 %build
 %cmake_kde4
@@ -40,9 +40,7 @@ what you've built.
 
 %install
 rm -rf %{buildroot}
-cd build
-%{makeinstall_std}
-cd -
+%{makeinstall_std} -C build
 
 %clean
 rm -rf %{buildroot}
