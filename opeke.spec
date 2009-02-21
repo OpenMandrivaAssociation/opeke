@@ -1,13 +1,14 @@
 Summary:	Playing with virtual bricks
 Name:		opeke
-Version: 	0.3.1
+Version: 	0.4
 Release: 	%mkrel 1
-Source0: 	http://opeke.noughmad.org/source/%{name}_%{version}_src.tar.gz
+Source0: 	http://downloads.sourceforge.net/opeke/Opeke-%version.tar.gz
 License: 	GPLv2+
 Group: 		Graphics
-Url: 		http://opeke.noughmad.org/wiki/doku.php
+Url: 		http://opeke.sourceforge.net/
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: 	kdelibs4-devel
+BuildRequires:	ogre-devel
 
 %description 
 Opeke is a KDE4 application for building structures with virtual bricks.
@@ -32,7 +33,7 @@ what you've built.
 #--------------------------------------------------------------------
 
 %prep
-%setup -q -n %name-%version
+%setup -q -n Opeke
 
 %build
 %cmake_kde4
