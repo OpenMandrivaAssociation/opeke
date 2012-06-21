@@ -1,7 +1,7 @@
 Summary:	Playing with virtual bricks
 Name:		opeke
 Version: 	0.4
-Release: 	5
+Release: 	6
 Source0: 	http://downloads.sourceforge.net/opeke/Opeke-%version.tar.gz
 License: 	GPLv2+
 Group: 		Graphics
