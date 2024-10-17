@@ -5,7 +5,7 @@ Release: 	6
 Source0: 	http://downloads.sourceforge.net/opeke/Opeke-%version.tar.gz
 License: 	GPLv2+
 Group: 		Graphics
-Url: 		http://opeke.sourceforge.net/
+Url: 		https://opeke.sourceforge.net/
 
 BuildRequires: 	kdelibs4-devel
 BuildRequires:	ogre-devel
