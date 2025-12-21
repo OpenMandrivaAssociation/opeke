@@ -7,6 +7,7 @@ License: 	GPLv2+
 Group: 		Graphics
 Url: 		https://opeke.sourceforge.net/
 
+BuildRequires:	make
 BuildRequires: 	kdelibs4-devel
 BuildRequires:	ogre-devel
 
